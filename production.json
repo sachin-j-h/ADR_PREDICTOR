@@ -1,0 +1,4 @@
+{
+    "DATABASE_URL": "mongodb+srv://sachin_j_h:sachinh123@cluster0.xmjtb.mongodb.net/ADR_Predictor?retryWrites=true&w=majority",
+    "PORT": "5000"
+}
