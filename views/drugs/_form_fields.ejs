@@ -1,0 +1,246 @@
+<!-- This is the ejs file for `Enter the details of new drug` page(Contents) -->
+
+<div>
+    <input type="text" name="name" class="section" required placeholder="Enter the name of the drug" autocomplete="off">
+</div>
+
+<div>
+    <input type="text" name="gname" class="section" required placeholder="Enter Generic name " autocomplete="off">
+</div>
+
+<div>
+    <textarea name="description" class="section" required placeholder="Description"></textarea>
+</div>
+
+<div class="side-title">
+    <h2>Side Effects</h2>
+</div>
+
+<div>
+    <table class="table">
+        <tr>
+            <td>
+                <label for="nausea">Nausea</label>
+            </td>
+            <td>
+                <input type="radio" id="nausea-yes" name="nausea" value="1" required> <label for="nausea-yes">Yes</label>
+            </td>
+            <td>
+                <input type="radio" id="nausea-no" name="nausea" value="0"> <label for="nausea-no">No</label>
+            </td>
+            <td>
+                <input type="radio" id="nausea-maybe" name="nausea" value="-1"> <label for="nausea-maybe">Not
+                    Sure</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="insomnia">Insomnia</label>
+            </td>
+            <td>
+                <input type="radio" id="insomnia-yes" name="insomnia" value="1" required> <label for="insomnia-yes">Yes</label>
+            </td>
+            <td>
+                <input type="radio" id="insomnia-no" name="insomnia" value="0"> <label for="insomnia-no">No</label>
+            </td>
+            <td>
+                <input type="radio" id="insomnia-maybe" name="insomnia" value="-1"> <label for="insomnia-maybe">Not
+                    Sure</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="fever">Fever</label>
+            </td>
+            <td>
+                <input type="radio" id="fever-yes" name="fever" value="1" required> <label for="fever-yes">Yes</label>
+            </td>
+            <td>
+                <input type="radio" id="fever-no" name="fever" value="0"> <label for="fever-no">No</label>
+            </td>
+            <td>
+                <input type="radio" id="fever-maybe" name="fever" value="-1"> <label for="fever-maybe">Not
+                    Sure</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="drowsiness">Drowsiness</label>
+            </td>
+            <td>
+                <input type="radio" id="drowsiness-yes" name="drowsiness" value="1" required> <label
+                    for="drowsiness-yes">Yes</label>
+            </td>
+            <td>
+                <input type="radio" id="drowsiness-no" name="drowsiness" value="0"> <label
+                    for="drowsiness-no">No</label>
+            </td>
+            <td>
+                <input type="radio" id="drowsiness-maybe" name="drowsiness" value="-1"> <label
+                    for="drowsiness-maybe">Not Sure</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="dermatitis">Dermatitis</label>
+            </td>
+            <td>
+                <input type="radio" id="dermatitis-yes" name="dermatitis" value="1" required> <label
+                    for="dermatitis-yes">Yes</label>
+            </td>
+            <td>
+                <input type="radio" id="dermatitis-no" name="dermatitis" value="0"> <label
+                    for="dermatitis-no">No</label>
+            </td>
+            <td>
+                <input type="radio" id="dermatitis-maybe" name="dermatitis" value="-1"> <label
+                    for="dermatitis-maybe">Not Sure</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="infection">Infection</label>
+            </td>
+            <td>
+                <input type="radio" id="infection-yes" name="infection" value="1" required> <label
+                    for="infection-yes">Yes</label>
+            </td>
+            <td>
+                <input type="radio" id="infection-no" name="infection" value="0"> <label for="infection-no">No</label>
+            </td>
+            <td>
+                <input type="radio" id="infection-maybe" name="infection" value="-1"> <label for="infection-maybe">Not
+                    Sure</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="heart_issues">Heart Issues</label>
+            </td>
+            <td>
+                <input type="radio" id="heart_issues-yes" name="heart_issues" value="1" required> <label
+                    for="heart_issues-yes">Yes</label>
+            </td>
+            <td>
+                <input type="radio" id="heart_issues-no" name="heart_issues" value="0"> <label
+                    for="heart_issues-no">No</label>
+            </td>
+            <td>
+                <input type="radio" id="heart_issues-maybe" name="heart_issues" value="-1"> <label
+                    for="heart_issues-maybe">Not Sure</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="diarrhea">Diarrhea</label>
+            </td>
+            <td>
+                <input type="radio" id="diarrhea-yes" name="diarrhea" value="1" required> <label for="diarrhea-yes">Yes</label>
+            </td>
+            <td>
+                <input type="radio" id="diarrhea-no" name="diarrhea" value="0"> <label for="diarrhea-no">No</label>
+            </td>
+            <td>
+                <input type="radio" id="diarrhea-maybe" name="diarrhea" value="-1"> <label for="diarrhea-maybe">Not
+                    Sure</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="internal_bleeding">Internal Bleeding</label>
+            </td>
+            <td>
+                <input type="radio" id="internal_bleeding-yes" name="internal_bleeding" value="1" required> <label
+                    for="internal_bleeding-yes">Yes</label>
+            </td>
+            <td>
+                <input type="radio" id="internal_bleeding-no" name="internal_bleeding" value="0"> <label
+                    for="internal_bleeding-no">No</label>
+            </td>
+            <td>
+                <input type="radio" id="internal_bleeding-maybe" name="internal_bleeding" value="-1"> <label
+                    for="internal_bleeding-maybe">Not Sure</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="organ_damage">Organ Damage</label>
+            </td>
+            <td>
+                <input type="radio" id="organ_damage-yes" name="organ_damage" value="1" required> <label
+                    for="organ_damage-yes">Yes</label>
+            </td>
+            <td>
+                <input type="radio" id="organ_damage-no" name="organ_damage" value="0"> <label
+                    for="organ_damage-no">No</label>
+            </td>
+            <td>
+                <input type="radio" id="organ_damage-maybe" name="organ_damage" value="-1"> <label
+                    for="organ_damage-maybe">Not Sure</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="urination_problems">Urination Problems</label>
+            </td>
+            <td>
+                <input type="radio" id="urination_problems-yes" name="urination_problems" value="1" required> <label
+                    for="urination_problems-yes">Yes</label>
+            </td>
+            <td>
+                <input type="radio" id="urination_problems-no" name="urination_problems" value="0"> <label
+                    for="urination_problems-no">No</label>
+            </td>
+            <td>
+                <input type="radio" id="urination_problems-maybe" name="urination_problems" value="-1"> <label
+                    for="urination_problems-maybe">Not Sure</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="throat_problems">Throat Problems</label>
+            </td>
+            <td>
+                <input type="radio" id="throat_problems-yes" name="throat_problems" value="1" required> <label
+                    for="throat_problems-yes">Yes</label>
+            </td>
+            <td>
+                <input type="radio" id="throat_problems-no" name="throat_problems" value="0"> <label
+                    for="throat_problems-no">No</label>
+            </td>
+            <td>
+                <input type="radio" id="throat_problems-maybe" name="throat_problems" value="-1"> <label
+                    for="throat_problems-maybe">Not Sure</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="neurological_problems">Neurological Problems</label>
+            </td>
+            <td>
+                <input type="radio" id="neurological_problems-yes" name="neurological_problems" value="1" required> <label
+                    for="neurological_problems-yes">Yes</label>
+            </td>
+            <td>
+                <input type="radio" id="neurological_problems-no" name="neurological_problems" value="0"> <label
+                    for="neurological_problems-no">No</label>
+            </td>
+            <td>
+                <input type="radio" id="neurological_problems-maybe" name="neurological_problems" value="-1"> <label
+                    for="neurological_problems-maybe">Not Sure</label>
+            </td>
+        </tr>
+    </table>
+</div>

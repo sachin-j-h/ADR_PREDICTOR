@@ -1,0 +1,26 @@
+<!-- This is the page for listing the side effects. -->
+<section class="bgimage">
+    <h1>Side Effects</h1>
+    <div class="bg-image">
+        <div class="wrapper">
+            <% for(let x=0; x< sideeffects.length; x++){ %>
+                <div class="card">
+                    <div class="info">
+                        <h2>
+                            <%= sideeffects[x].sideeffectname %>
+                        </h2>
+                        <p>
+                            <%= sideeffects[x].sideeffectdescription %>
+                        </p>
+                        <h5>Drugs which cause this:</h5>
+                        <h3>
+                            <% causing_drugs[x].forEach(causing_drug=>{ %>
+                                <%= causing_drug %>
+                                    <% }) %>
+                        </h3>
+                    </div>
+                </div>
+                <% } %>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,678 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+
+html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/*  HEADER START */
+
+li,
+header a,
+header nav li a,
+button {
+  font-weight: 500;
+  font-size: 21px;
+  color: #111;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  height: 95px;
+  width: 100%;
+  z-index: 12;
+  top: 0px;
+  position: fixed;
+  background-color: whitesmoke;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 16px;
+  margin-top: 9px;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: #0088a9;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+/* HEADER END */
+
+/* FIRST PAGE STARTS*/
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("/images/back.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+/* nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+nav img{
+  width: 100px;
+} */
+.text-box {
+  width: 90%;
+  color: darkred;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1 {
+  font-size: 62px;
+}
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+}
+/* .hero-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(237, 240, 101);
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: rgb(138, 14, 14);
+  position: relative;
+  cursor: pointer;
+}
+.hero-btn:hover{
+  border: 1px solid #570904;
+  background: #570904;
+  transition: 1s;
+} */
+@media (max-width: 700px) {
+  .text-box h1 {
+    font-size: 20px;
+  }
+}
+.drug-f {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: darkred;
+}
+.drug-f a {
+  color: maroon;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.drug-col {
+  flex-basis: 31%;
+  background: rgb(241, 214, 212);
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.drug-col h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.drug-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+.pictures {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.images-col {
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+.images-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+.images-col p {
+  padding: 0;
+  color: dimgray;
+}
+.images-col h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* FIRST PAGE ENDS*/
+
+/* FORM FIELDS STARTS */
+
+.wrap {
+  width: 100%;
+  min-width: 20em;
+  margin-top: 150px;
+  margin-bottom: 20px;
+}
+
+.background {
+  background: aqua;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 3.5em;
+  width: 850px;
+  height: 980px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#title,
+.side-title h2 {
+  width: 100%;
+  margin: auto;
+}
+#title h2,
+.side-title h2 {
+  margin-bottom: 10px;
+  text-align: center;
+  color: #000;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+#title {
+  margin-bottom: 20px;
+}
+
+.section {
+  color: #000;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 1em;
+  background-color: rgba(175, 175, 175, 0.3);
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0.1em solid black;
+  text-indent: 1.5em;
+}
+
+.custom-btn {
+  margin-top: 10px;
+  margin-left: 150px;
+  width: 130px;
+  height: 45px;
+  color: #fff;
+  border-radius: 5px;
+  /* padding: 10px 25px; */
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.btn-7 {
+  /* background: linear-gradient(0deg, rgb(0, 38, 207) 0%, rgba(139, 0, 194, 0.986) 100%); */
+  background: #4d6dc1;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-7 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-7:before,
+.btn-7:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #4d6dc1;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.btn-7:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-7:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-7:hover {
+  color: #4d6dc1;
+  background: transparent;
+}
+.btn-7:hover:before {
+  height: 100%;
+}
+.btn-7:hover:after {
+  width: 100%;
+}
+.btn-7 span:before,
+.btn-7 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #4d6dc1;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.btn-7 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-7 span:after {
+  height: 2px;
+  width: 0%;
+}
+.btn-7 span:hover:before {
+  height: 100%;
+}
+.btn-7 span:hover:after {
+  width: 100%;
+}
+
+input[type="radio"] {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.table {
+  font-size: 22px;
+}
+
+.table td {
+  padding: 5px;
+}
+
+/* FORM FIELDS ENDS */
+/* DUP EXISTS */
+
+.dupno {
+  margin-top: 150px;
+  margin-left: 50px;
+  background-color: rgba(212, 237, 218, 255);
+  color: darkgreen;
+  padding: 30px;
+  border-radius: 5px;
+  width: 80%;
+  font-size: 25px;
+}
+
+.click {
+  margin-top: 35px;
+  margin-left: 50px;
+  font-size: large;
+}
+
+.click a {
+  padding: 7px;
+  text-decoration: none;
+  border-style: solid;
+  border-color: lightgray;
+  border-radius: 5px;
+  color: #000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.click a:hover {
+  background-color: rgba(212, 237, 218, 255);
+}
+
+.dups {
+  margin-top: 150px;
+  margin-left: 50px;
+  background-color: rgba(248, 215, 218, 255);
+  color: red;
+  padding: 30px;
+  border-radius: 5px;
+  width: 80%;
+  font-size: 25px;
+}
+
+#click a:hover {
+  background-color: rgba(248, 215, 218, 255);
+}
+
+/* LIST DRUGS STARTS*/
+
+.listbgimage {
+  background-image: linear-gradient(
+    to top,
+    #c4c5c7 0%,
+    #dcdddf 52%,
+    #ebebeb 100%
+  );
+}
+
+.boxContainer {
+  margin: auto;
+  margin-top: 150px;
+  position: relative;
+  width: 450px;
+  height: 55px;
+}
+
+.elementsContainer {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.search {
+  border: 5px solid silver;
+  height: 100%;
+  width: 100%;
+  margin-top: 0;
+  margin-left: 10px;
+  border-radius: 50px;
+  font-size: 18px;
+  color: #424242;
+  font-size: larger;
+  font-weight: bold;
+  text-align: center;
+}
+
+.search:focus {
+  outline: none;
+}
+
+.btn-3 {
+  margin-left: 10px;
+  height: 55px;
+}
+
+.btn-3:hover {
+  color: white;
+}
+
+.list-drugs {
+  margin-left: 500px;
+  margin-top: 20px;
+  height: auto;
+  width: 500px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  background-color: #abd5ab;
+}
+
+.drug-names {
+  margin-left: 180px;
+  font-size: 50px;
+}
+
+.drug-names a {
+  color: #000;
+  text-decoration: none;
+}
+
+.drug-names a:hover {
+  color: rgba(68, 58, 58, 0.849);
+}
+
+.heading {
+  margin-left: 130px;
+  color: #000;
+  font-size: 43px;
+  padding: 10px;
+}
+
+hr {
+  height: 5px;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+}
+
+/* LIST DRUGS END */
+
+/*  ONE DRUG START */
+.one-drug {
+  background-color: #2f4353;
+  background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
+  backdrop-filter: blur(10px);
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-top: 150px;
+  margin-left: 500px;
+  margin-bottom: 50px;
+}
+
+.oneimage {
+  background-color: #e7eff9;
+  background-image: linear-gradient(315deg, #e7eff9 0%, #cfd6e6 74%);
+}
+
+.drug-first {
+  font-size: 25px;
+}
+
+.one-drug label {
+  font-size: 30px;
+}
+
+/* .one-drug::before{
+    content: '';
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 71vh;
+    left: 5%;
+    width: 100%;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(10px);
+} */
+
+.go-back {
+  margin-top: 30px;
+}
+
+.go-back a {
+  padding: 10px;
+  margin-left: 170px;
+  font-size: 25px;
+  text-decoration: none;
+  border-style: solid;
+  border-color: lightgray;
+  border-radius: 5px;
+  color: #000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.go-back a:hover {
+  background-color: ivory;
+}
+
+/* ONE DRUG END*/
+
+/*LIST SIDE_EFFECTS START */
+.bgimage {
+  position: relative;
+  height: auto;
+  width: 100%;
+  bottom: 0;
+  background: url("/images/side_effects_image.jpg") no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.wrapper {
+  margin-left: 0px;
+}
+
+.card .info h2 {
+  font-size: 60px;
+}
+
+.card {
+  display: flex;
+  margin-left: 350px;
+  margin-top: 100px;
+  width: 800px;
+  height: 400px;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  position: relative;
+  /* align-items: flex-end; */
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  margin-bottom: 15px;
+}
+
+.card:hover {
+  color: black;
+  transition: 0.5 all ease;
+  background-color: white;
+  opacity: 1;
+}
+
+.info p {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+  word-spacing: 5px;
+}
+
+.info h5 {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.info h3 {
+  text-align: center;
+}
+/*lIST SIDE_EFFECTS END*/
+
+/* FOOTER START */
+footer {
+  margin-top: auto;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: gray;
+  height: auto;
+  width: 100%;
+  padding-top: 20px;
+  color: #000;
+}
+
+.footer-content p {
+  margin-left: 20px;
+  line-height: 25px;
+  font-size: 14px;
+}
+.footer-bottom {
+  background: darkgray;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+}
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
+}
+/*FOOTER END */

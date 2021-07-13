@@ -1,0 +1,18 @@
+<!-- This is the ejs file for `Enter the details of new drug` page(Form) -->
+<section class="formimage">
+<div class="wrap">
+    <div class="background">
+        <form action="/drugs/new/submit" method="POST">
+            <div id="title">
+                <h2>Enter the details of a new drug</h2>
+            </div>
+            <%- include('_form_fields') %>
+
+                <div class="submit">
+                    <button class="custom-btn btn-7 btn-trans" type="submit"><span>Submit</span></button>
+                    <button class="custom-btn btn-7 btn-trans" type="reset"><span>Clear</span></button>
+                </div>
+        </form>
+    </div>
+</div>
+</section>

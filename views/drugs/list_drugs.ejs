@@ -1,0 +1,41 @@
+<!-- This is the page for listing the drugs -->
+<div style="background-color: #dafbff; height: 100vh;">
+    <form method="GET">
+        <div class="boxContainer">
+            <table class="elementsContainer">
+                <tr>
+                    <td>
+                        <input type="text" placeholder="Search" class="search" name="name">
+                    </td>
+                    <td>
+                        <button class="btn-3 btn-trans" type="submit">Search</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <% if(drugs_List.length == 0){ %>
+            <h1 style="text-align: center; align-items: center; position: absolute; top: 50vh;left: 50vh;"> We got zero results for your search, Try again </h1> <% ; %>
+        <% }else{ %>
+            <div class="list-drugs">
+                <h1 class="heading">List of Drugs</h1>
+                <hr>
+                <div class="drug-names">
+                    <ul>
+                        <% drugs_List.forEach(drugs=> { %>
+                            <p>
+                                <% let drug_name=drugs.name %>
+                                <% let href="/drugs/one_drug/" %>
+                                <% href=href.concat(drug_name) %>
+                                <a href=" <%= href %>">
+                                    <%= drug_name %>
+                                </a>
+                            </p>
+                        <%})%>
+                    </ul>
+                </div>
+            </div>
+            <% ; %>
+        <% }; %>
+    </form>
+</div>
