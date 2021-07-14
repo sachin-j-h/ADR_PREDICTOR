@@ -12,15 +12,17 @@
                         <p>
                             <%= sideeffects[x].sideeffectdescription %>
                         </p>
-                        <h5>Drugs which cause this:</h5>
-                        <h3>
-                            <% causing_drugs[x].forEach(causing_drug=>{ %>
-                                <%= causing_drug %>
-                                    <% }) %>
-                        </h3>
+                        <% if(causing_drugs[x].length > 0){ %>
+                            <h5>Drugs which cause this:</h5>
+                            <h3>
+                                <% causing_drugs[x].forEach(causing_drug=>{ %>
+                                    <%= causing_drug %>
+                                <% }) %>
+                            </h3>
+                        <% }; %>
                     </div>
                 </div>
-                <% } %>
+            <% } %>
         </div>
     </div>
 </section>

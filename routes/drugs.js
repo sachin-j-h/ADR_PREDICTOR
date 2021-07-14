@@ -95,8 +95,8 @@ router.post('/new/submit', valid_drug_name, my_algorithm, async (req, res) => {
             res.render('drugs/dup_exists.ejs')
         }
         else {
-            const newDrug = await drug.save()
-            // console.log("Drug details: ", res.side_effects)
+            // const newDrug = await drug.save()
+            console.log("Drug details: ", res.side_effects)
             res.render('drugs/dup_not_exists.ejs')
         }
     }
