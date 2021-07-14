@@ -1,16 +1,16 @@
 <!-- This is the ejs file to display the details of a particular drug -->
-<div class="oneimage">
+<div class="oneimage scrollable">
 <div class="one-drug">
-    <label><h3>Name:</h3></label> 
+    <label class="one-drug-label"><h3>Name</h3></label> 
     <div class="drug-first"><%= one_drug.name %></div>
     
-    <label><h3>Generic Name</h3></label>
+    <label class="one-drug-label"><h3>Generic Name</h3></label>
     <div class="drug-first"><%= one_drug.generic_name %></div>
 
-    <label><h3>Description</h3></label> 
+    <label class="one-drug-label"><h3>Description</h3></label> 
     <div class="drug-first"><%= one_drug.description %></div>
     
-    <label><h3>Side Effects</h3></label>
+    <label class="one-drug-label"><h3>Side Effects</h3></label>
     <div class="drug-first">
         <% (one_drug.causing_side_effects).forEach(side_effect =>{ %>
             <%= side_effect %> <br>

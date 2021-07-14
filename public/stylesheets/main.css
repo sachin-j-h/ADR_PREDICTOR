@@ -398,7 +398,7 @@ input[type="radio"] {
 
 /* LIST DRUGS STARTS*/
 
-.list-drug-all {
+.scrollable {
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -496,6 +496,11 @@ hr {
 /* LIST DRUGS END */
 
 /*  ONE DRUG START */
+
+.one-drug-label {
+  color: #a76262;
+}
+
 .one-drug {
   background-color: #2f4353;
   background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
