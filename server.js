@@ -30,6 +30,6 @@ app.use('/', indexRouter)
 app.use('/drugs', drugRouter)
 
 
-app.listen(process.env.PORT, () => {
+app.listen(5000, () => {
     console.log("Server is running...")
 })
