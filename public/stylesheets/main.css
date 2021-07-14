@@ -398,6 +398,11 @@ input[type="radio"] {
 
 /* LIST DRUGS STARTS*/
 
+.list-drug-all {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 .listbgimage {
   background-image: linear-gradient(
     to top,
