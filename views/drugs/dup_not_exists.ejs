@@ -1,14 +1,31 @@
 <!-- This page is rendered when the entered drug name is not in the database and the details are updated in the database successfully -->
 <div class="dupno">
-Drug details are added successfully!!
+    Drug details are added successfully!!
 
-Want to add the details of a new drug??
+    <div style="font-size:medium;">
+        (The unknown side effects are predicted using Predictor Algorithm)
+        <br><br>    
 
-<div style="font-size:medium;">
-    (The unknown side effects are predicted using Predictor Algorithm)
+        <% if(predicted_side_effects.length == 0 ){ %>
+            <h3>There is no potential side effects which are unknown</h3>
+        <% }else{ %>
+                <% if(predicted_side_effects.length == 1){ %>
+                        <h3>The potential side effect of this drug is </h3>
+                <% }else{ %>
+                    <h3>The potential side effects of this drug are </h3>
+                <% } %>
+                <table>
+                    <% predicted_side_effects.forEach(predicted_side_effect =>{ %>
+                            <tr> <td> <h4> <%= predicted_side_effect %> </h4> </td> </tr>
+                    <% }) %>
+                </table>
+        <% } %>
+
+    </div>
+    <br>
+    Want to add the details of a new drug??
 </div>
 
-</div>
 <!-- It is a div containing two buttons one button for going back another button for showing all the drug names -->
 <div class="click btn-trans">
     <a href="/drugs/new">Back</a>

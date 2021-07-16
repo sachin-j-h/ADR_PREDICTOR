@@ -15,26 +15,19 @@
         </div>
         
         <% if(drugs_List.length == 0){ %>
-            <h1 style="text-align: center; align-items: center; position: absolute; top: 50vh;left: 50vh;"> We got zero results for your search, Try again </h1> <% ; %>
+            <h1 style="text-align: center; align-items: center; position: absolute; top: 50vh;left: 5vh;"> We got zero results for your search or there is no drug detail added yet, Try again </h1> <% ; %>
         <% }else{ %>
-            <div class="list-drugs">
-                <h1 class="heading">List of Drugs</h1>
-                <hr>
-                <div class="drug-names">
-                    <ul>
+                <table class="list-drugs list-drug-table">
+                    <tr> <th> <h1 class="head-list-drugs">List of Drugs</h1></th> </tr>
+                    <div class="drug-names">
                         <% drugs_List.forEach(drugs=> { %>
-                            <p>
-                                <% let drug_name=drugs.name %>
-                                <% let href="/drugs/one_drug/" %>
-                                <% href=href.concat(drug_name) %>
-                                <a href=" <%= href %>">
-                                    <%= drug_name %>
-                                </a>
-                            </p>
+                            <% let drug_name=drugs.name %>
+                            <% let href="/drugs/one_drug/" %>
+                            <% href=href.concat(drug_name) %>
+                            <tr> <td> <a class="actual-drug" href=" <%= href %>"> <%= drug_name %> </a> </td> </tr>
                         <%})%>
-                    </ul>
-                </div>
-            </div>
+                    </div>
+                </table>
             <% ; %>
         <% }; %>
     </form>

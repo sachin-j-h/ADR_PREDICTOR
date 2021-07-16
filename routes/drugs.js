@@ -89,15 +89,29 @@ router.post('/new/submit', valid_drug_name, my_algorithm, async (req, res) => {
         description: req.body.description,
         side_effects: res.side_effects
     })
-
     try {
         if (res.flag) {
             res.render('drugs/dup_exists.ejs')
         }
         else {
+
+            // This is the function to display the side effects which are observed to be caused by the drug by Predictor Algorithm
+            //{
+            let predicted_side_effects = []
+            const side_effects_all = await Sideeffect.find()
+
+            for (let i = 0; i < (res.side_effects).length; i++) {
+                if ((res.target_drug_req)[i] == -1 && (res.side_effects)[i] == 1) {
+                    predicted_side_effects.push(side_effects_all[i].sideeffectname)
+                }
+            }
+            //}
+
             const newDrug = await drug.save()
             // console.log("Drug details: ", res.side_effects)
-            res.render('drugs/dup_not_exists.ejs')
+            res.render('drugs/dup_not_exists.ejs', {
+                predicted_side_effects: predicted_side_effects
+            })
         }
     }
     catch (err) {
@@ -131,9 +145,12 @@ async function my_algorithm(req, res, next) {
             req.body.neurological_problems
         ]
 
+        // console.log("Target Drug: ", target_drug)
+        res.target_drug_req = target_drug
+
         const drug_details = await Drug.find()
         const record_count = await Drug.find().countDocuments()
-        const threshold_value = 0.5
+        const threshold_value = 0.3
         let drug_array = []
         let selected = []
         let sim_array = []
@@ -151,7 +168,7 @@ async function my_algorithm(req, res, next) {
             sim_array[x] = parseFloat((sim_count / target_drug.length).toFixed(2))
             selected[x] = sim_array[x] >= threshold_value ? true : false
         }
-
+        // console.log("Sim array: ", sim_array)
         let copy_target_drug = target_drug.slice()
         for (let i = 0; i < target_drug.length; i++) {
             let numerator = 0

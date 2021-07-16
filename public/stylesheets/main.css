@@ -466,17 +466,32 @@ input[type="radio"] {
   background-color: #abd5ab;
 }
 
+.list-drug-table td {
+  text-align: center;
+  font-size: 50px;
+}
+
+.head-list-drugs {
+  text-align: center;
+  font-size: 70px;
+  color: #000;
+}
+
+.actual-drug {
+  text-decoration: none;
+  color: #000;
+}
+
 .drug-names {
   margin-left: 180px;
   font-size: 50px;
 }
 
 .drug-names a {
-  color: #000;
   text-decoration: none;
 }
 
-.drug-names a:hover {
+.actual-drug:hover {
   color: rgba(68, 58, 58, 0.849);
 }
 
